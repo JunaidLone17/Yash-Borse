@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+  </head>
+  <body>
+    {% if result['IsGenuine']: %}
+    <!--if block html code-->
+    <center><h1>IT is a Genuine Image</h1></center>
+    {% else %}
+    <!--else block html code-->
+    <center><h1>IT is a Forged Image</h1></center>
+    {% endif %} <
+    <center>
+      <h1>Similarity Score is {{result['SimilarityScore']}}</h1>
+    </center>
+  </body>
+</html>
